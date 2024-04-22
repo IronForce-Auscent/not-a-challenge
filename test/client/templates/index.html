@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Landing Page</h1>
+    </header>
+    
+    <section>
+        <h2>About Us</h2>
+        <p>This is a simple landing page created using HTML and CSS.</p>
+    </section>
+
+    {% if response %}
+        {{ response }}
+    {% endif %}
+
+    <footer>
+        <p>&copy; 2024 My Landing Page. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

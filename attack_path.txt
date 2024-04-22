@@ -1,0 +1,1 @@
+use Burp Suite to perform SSRF attack -> redirect to admin page -> use SQL injection on the admin search page
