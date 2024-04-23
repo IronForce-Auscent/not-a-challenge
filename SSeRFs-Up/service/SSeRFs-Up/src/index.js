@@ -30,5 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
     dotElements.forEach((dot, index) => {
         dot.addEventListener("click", () => currentSlide(index + 1));
     });
+
+    const prevButton = document.querySelector(".prevbutton");
+    const nextButton = document.querySelector(".nextbutton");
+
+    prevButton.addEventListener("click", () => plusSlides(-1));
+    nextButton.addEventListener("click", () => plusSlides(1));
 });
 
